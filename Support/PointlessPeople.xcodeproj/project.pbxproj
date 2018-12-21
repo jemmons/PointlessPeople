@@ -10,6 +10,10 @@
 		7358267921A23FE300DE1C3C /* PointlessPeople.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7358266F21A23FE300DE1C3C /* PointlessPeople.framework */; };
 		7358267E21A23FE300DE1C3C /* PointlessPeopleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7358267D21A23FE300DE1C3C /* PointlessPeopleTests.swift */; };
 		739F100321A240BA00C6EE43 /* First.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739F100221A240BA00C6EE43 /* First.swift */; };
+		739F100A21A8573200C6EE43 /* DataThing.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 739F100821A8573200C6EE43 /* DataThing.xcdatamodeld */; };
+		739F100D21A8576B00C6EE43 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739F100B21A8576B00C6EE43 /* Person.swift */; };
+		739F100E21A8576B00C6EE43 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739F100C21A8576B00C6EE43 /* Company.swift */; };
+		739F101021A8581A00C6EE43 /* Root.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739F100F21A8581A00C6EE43 /* Root.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +31,10 @@
 		7358267821A23FE300DE1C3C /* PointlessPeopleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PointlessPeopleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7358267D21A23FE300DE1C3C /* PointlessPeopleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointlessPeopleTests.swift; sourceTree = "<group>"; };
 		739F100221A240BA00C6EE43 /* First.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = First.swift; sourceTree = "<group>"; };
+		739F100921A8573200C6EE43 /* DataThing.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataThing.xcdatamodel; sourceTree = "<group>"; };
+		739F100B21A8576B00C6EE43 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		739F100C21A8576B00C6EE43 /* Company.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
+		739F100F21A8581A00C6EE43 /* Root.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Root.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +59,9 @@
 		7358266521A23FE300DE1C3C = {
 			isa = PBXGroup;
 			children = (
+				739F100821A8573200C6EE43 /* DataThing.xcdatamodeld */,
 				7358267121A23FE300DE1C3C /* Sources */,
-				7358267C21A23FE300DE1C3C /* PointlessPeopleTests */,
+				7358267C21A23FE300DE1C3C /* Tests */,
 				7358267021A23FE300DE1C3C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -69,18 +78,21 @@
 		7358267121A23FE300DE1C3C /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				739F100C21A8576B00C6EE43 /* Company.swift */,
+				739F100B21A8576B00C6EE43 /* Person.swift */,
 				739F100221A240BA00C6EE43 /* First.swift */,
+				739F100F21A8581A00C6EE43 /* Root.swift */,
 			);
 			name = Sources;
 			path = ../Sources;
 			sourceTree = "<group>";
 		};
-		7358267C21A23FE300DE1C3C /* PointlessPeopleTests */ = {
+		7358267C21A23FE300DE1C3C /* Tests */ = {
 			isa = PBXGroup;
 			children = (
 				7358267D21A23FE300DE1C3C /* PointlessPeopleTests.swift */,
 			);
-			name = PointlessPeopleTests;
+			name = Tests;
 			path = ../Tests;
 			sourceTree = "<group>";
 		};
@@ -192,7 +204,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				739F100D21A8576B00C6EE43 /* Person.swift in Sources */,
+				739F100A21A8573200C6EE43 /* DataThing.xcdatamodeld in Sources */,
 				739F100321A240BA00C6EE43 /* First.swift in Sources */,
+				739F100E21A8576B00C6EE43 /* Company.swift in Sources */,
+				739F101021A8581A00C6EE43 /* Root.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,6 +475,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		739F100821A8573200C6EE43 /* DataThing.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				739F100921A8573200C6EE43 /* DataThing.xcdatamodel */,
+			);
+			currentVersion = 739F100921A8573200C6EE43 /* DataThing.xcdatamodel */;
+			path = DataThing.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 7358266621A23FE300DE1C3C /* Project object */;
 }
